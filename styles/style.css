@@ -5,6 +5,8 @@
     align-items: center;
 }
 
+/* TODO underline position  text-underline-offset*/
+
 .header__menu-list {
     display: flex;
     gap: 33px;
@@ -21,7 +23,7 @@
 
 .header__logo {
     display: block;
-    width: 148px;
+    width: 139px;
 }
 
 .header__address {
@@ -39,14 +41,77 @@
 }
 
 .cover {
+    min-height: 747px;
+    position: relative;
     padding: 165px 50px 50px;
     margin-bottom: 180px;
-    background-image: url("../images/cover.jpg")
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    inset: 0;
+    z-index: 0;
+}
 
+.cover__tittle {
+    position: relative;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 106px;
+}
 
+.aligned-text {
+    display: block;
+    margin-bottom: 20px;
+}
 
+.cover__tittle-top {
+    text-align: start;
+}
+
+.cover__tittle-center {
+    text-align: center;
+}
+
+.cover__tittle-bottom {
+    text-align: end;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    display: flex;
+    position: relative;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover__description-text {
+    word-spacing: 19px;
+}
+
+.cover__description-button {
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    padding: 11px 32px;
+    border: 1px solid white;
+    font-size: 22px;
+    text-transform: uppercase;
+}
 
 
 .lots {
@@ -58,6 +123,12 @@
     padding: 35px 24px 0 71px;
     margin-bottom: 180px;
 }
+
+.about__logo{
+    display: block;
+    max-width: 142px;
+}
+
 .footer {
     padding-bottom: 82px;
 }
