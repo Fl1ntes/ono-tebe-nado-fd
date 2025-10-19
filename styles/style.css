@@ -26,13 +26,13 @@
 
 .header__address {
   justify-self: end;
-  max-width: 240px;
 }
 
 .address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 240px;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
@@ -226,5 +226,31 @@
 }
 
 .footer {
-  padding-bottom: 82px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding:0 50px 82px;
+}
+
+.footer__address {
+  max-width: 260px;
+}
+
+.footer__menu-list {
+  text-align: center;
+  list-style-type: none;
+}
+
+.footer__menu-item {
+  font-size: 18px;
+}
+
+.footer__media {
+  display: flex;
+  justify-content: end;
+  gap: 48px;
+  list-style-type: none;
+}
+
+.footer__media-item {
+  max-width: 48px;
 }
